@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+:root{
+    --grey : #272725;
+    --green : #36a35f;
+    --white : #ffe3e0;
+    --liteBlue : #accdcd;
+    --mildBlue : #d1e4e4;
+    --tomato : #e76f51;
+    --orange : #ee8959;
+    --yellow : #e9c46a;
+    --navy : #0f3a57;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--grey);
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.tic{
+    color: var(--green);
+}
+.tac{
+    color: var(--tomato);
+}
+.toe{
+    color: var(--yellow);
+}
+.turn{
+    color: var(--green);
+}
+.container{
+    color: var(--white);
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.container > h3{
+    margin: 10px 0;
+}
+.board{
+    margin: 10px 10px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: 31% 31% 31%;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.box h1{
+    display: inline;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Permanent Marker', cursive;
+}
+#sound{
+    display: none;
+}
+.overCard{
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    top: -60%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 120px;
+    background: linear-gradient(90deg,var(--tomato),var(--orange));
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: 1s ease-in;
+    transition-delay: 1s;
+}
+#wins{
+    color: var(--grey);
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+}
+#sym{
+    color: var(--navy);
+}
+button{
+    text-transform: capitalize;
+    padding: 8px 15px;
+    background: linear-gradient(-90deg,var(--liteBlue),var(--mildBlue));
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+}
+.footer{
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    padding: 5px 0;
+}
+
+@media screen and (max-width:700px) {
+    .overCard{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:280px){
+    .board{
+        width: 280px;
+    }
+    .overCard{
+        width: 250px;
+    }
+
+}

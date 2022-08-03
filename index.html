@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe</title>
+        <link rel="shortcut icon" href="image/XO.jpg" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+    </head>
+    <body>
+        <!-- wrap the all contents -->
+        <div class="container">
+            <h1>
+                <span class="tic">Tic</span>
+                <span class="tac">Tac</span>
+                <span class="toe">Toe</span>
+            </h1>
+            <h3>Player '<span class="turn">X</span>' turns</h3>
+            <!-- to create a tic tac toe board -->
+            <div class="board">
+                <!-- the board have 3x3 row and columns, so 
+                that I created 9 box and will align in 3x3 format -->
+                <div class="box"><h1 id="mark"></h1></div>
+                <div class="box"><h1 id="mark"></h1></div>
+                <div class="box"><h1 id="mark"></h1></div>
+                <div class="box"><h1 id="mark"></h1></div>
+                <div class="box"><h1 id="mark"></h1></div>
+                <div class="box"><h1 id="mark"></h1></div>
+                <div class="box"><h1 id="mark"></h1></div>
+                <div class="box"><h1 id="mark"></h1></div>
+                <div class="box"><h1 id="mark"></h1></div>
+            </div>
+            <!-- creating reset button to reset the game -->
+            <button class="reset">reset</button>
+        </div>
+        <!-- create a game over card -->
+        <section class="overCard">
+            <h2 id="wins">'<span id="sym"> O </span>' won the match</h2>
+            <button class="start">start</button>
+        </section>
+        <!-- //footer -->
+        <div class="footer">
+            <p>&copy; Created by Prabeen</p>
+        </div>
+        <!-- adding the click sound using iframe tag -->
+        <iframe src="" frameborder="0" id="sound"></iframe>
+
+        <!-- adding javascript file -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
