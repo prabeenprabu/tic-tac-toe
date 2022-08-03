@@ -34,14 +34,14 @@ Created the tic tac toe web game.  This created with html, css and javascript.
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Grey | ![#272725](https://via.placeholder.com/10/272725?text=+) #272725 |
-| Green | ![#36a35f](https://via.placeholder.com/10/36a35f?text=+) #36a35f |
-| Light Blue | ![#accdcd](https://via.placeholder.com/10/accdcd?text=+) #accdcd |
-| Mild Blue | ![#d1e4e4](https://via.placeholder.com/10/d1e4e4?text=+) #d1e4e4 |
-| Mild Red| ![#e76f51](https://via.placeholder.com/10/e76f51?text=+) #e76f51 |
-| Orange | ![#ee8959](https://via.placeholder.com/10/ee8959?text=+) #ee8959 |
-| Yellow | ![#e9c46a](https://via.placeholder.com/10/e9c46a?text=+) #e9c46a |
-| Navy Blue| ![#0f3a57](https://via.placeholder.com/10/0f3a57?text=+) #0f3a57 |
+| Grey |  #272725 |
+| Green | #36a35f |
+| Light Blue |  #accdcd |
+| Mild Blue |  #d1e4e4 |
+| Mild Red| #e76f51 |
+| Orange |  #ee8959 |
+| Yellow |  #e9c46a |
+| Navy Blue|  #0f3a57 |
 
 
 ## Deployment
